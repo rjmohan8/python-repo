@@ -1,18 +1,21 @@
-def fact(n):
-    res = 1
+def fact_pgm():
+    result = 1
 
-    if n == 0:
-        return 0
+    num = int(input('Enter num for factorial: '))
 
-    while n >= 1:
-        res = res * n
-        n = n - 1
-    return res
+    while num > 1 and num != 0 and num != 1:
+        if num == 0:
+            print("0")
+            break
+        elif num == 1:
+            print("1")
 
+        result = result * num
+        num -= 1
 
-val = int(input("Enter a value to find its factorial: "))
-result=fact(val)
-print(result)
+    print(result)
+
+fact_pgm()
 
 
 
